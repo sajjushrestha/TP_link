@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -55,6 +56,15 @@ public class TP {
 	
 		
 		driver.findElement(By.name("down_bandWidth")).sendKeys(input);
+		
+		WebElement check=driver.findElement(By.name("QoSCtrl"));
+		if(!(check.isSelected()))
+		{
+			check.click();
+		}
+		else {
+			
+		}
 		
 		driver.findElement(By.name("Save")).click();
 		
