@@ -15,7 +15,7 @@ public class TP {
 
 	
 	@Test
-	public void Launch()    //2 commit
+	public void Launch()    //3 commit
 	
 	
 	{
@@ -31,13 +31,13 @@ public class TP {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("http://192.168.1.1");
+		driver.get("http://192.168.0.1");
 		
 		WebDriverWait wait=new WebDriverWait(driver,3000);
 		
-		driver.findElement(By.id("userName")).sendKeys("mybujji");
+		driver.findElement(By.id("userName")).sendKeys("admin");
 		
-		driver.findElement(By.id("pcPassword")).sendKeys("bujji@0224");
+		driver.findElement(By.id("pcPassword")).sendKeys("admin");
 		
 		driver.findElement(By.id("loginBtn")).click();
 		
