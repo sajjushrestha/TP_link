@@ -15,7 +15,7 @@ public class TP {
 
 	
 	@Test
-	public void Launch()    //5commit
+	public void Launch()    //6commit
 	
 	
 	{
@@ -31,7 +31,7 @@ public class TP {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("http://192.168.0.1");
+		driver.get("http://192.168.1.1");
 		
 		WebDriverWait wait=new WebDriverWait(driver,3000);
 		
